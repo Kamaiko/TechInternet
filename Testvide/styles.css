@@ -1,0 +1,14 @@
+/* ----- TOC ----- */
+.toc {
+    background-color: #dadada;
+    border: gray solid 1px;
+    margin-bottom: 1em;
+    }
+    .toc .toc-title {
+    margin-left: 1em;
+    }
+    .post-body .no-decoration,
+    .post-body .no-decoration a {
+    text-decoration: none;
+    color: black;
+    }
