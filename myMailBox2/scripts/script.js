@@ -1,3 +1,4 @@
+//Tab setup 
 function setupTabs () {
     document.querySelectorAll(".tabs__button").forEach(button => {
         button.addEventListener("click", () => {
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+// Contact List 
 window.onload = function(){
 	// Buttons
 	var quickAddBtn = document.getElementById('QuickAdd');
@@ -75,7 +76,7 @@ window.onload = function(){
 			// format the input into a valid JSON structure
 			var obj = new jsonStructure(fullname.value,phone.value,address.value,city.value,email.value);
 			addressBook.push(obj);
-			localStorage['addbook'] = JSON.stringify(addressBook);
+			localStorage['contacts'] = JSON.stringify(addressBook);
 			quickAddFormDiv.style.display = "none";
 			clearForm();
 			showAddressBook();
@@ -87,7 +88,7 @@ window.onload = function(){
 		if(e.target.classList.contains('delbutton')){
 			var remID = e.target.getAttribute('data-id');
 			addressBook.splice(remID,1);
-			localStorage['addbook'] = JSON.stringify(addressBook);
+			localStorage['contacts'] = JSON.stringify(addressBook);
 			showAddressBook();
 		}
 	}
@@ -100,10 +101,10 @@ window.onload = function(){
 	}
 
 	function showAddressBook(){
-		if(localStorage['addbook'] === undefined){
-			localStorage['addbook'] = '';
+		if(localStorage['contacts'] === undefined){
+			localStorage['contacts'] = '';
 		} else {
-			addressBook = JSON.parse(localStorage['addbook']);
+			addressBook = JSON.parse(localStorage['contacts']);
 			// Loop over the array addressBook and insert into the page
 			addBookDiv.innerHTML = '';
 			for(var n in addressBook){
