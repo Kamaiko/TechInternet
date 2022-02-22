@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <!--Google Font icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/addressbook.js" defer></script>
+    <link rel="stylesheet" href="styles/addressbook.css">
     <title>myMailbox</title>
 </head>
 <body>
@@ -52,53 +53,32 @@
             <p> Créer un message</p>
         </div>
         <div class="tabs__content" data-tab="3">
-            <h2>Contact List</h2>
-            <form>
-                <div class="table">
-                    <div class="row">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" class="text bar" >
-                            <div class="error-message">Name is a required field.</div>
-                        </div>
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="text" class="text bar" >
-                            <div class="error-message">Email is a required field.</div>
-                        </div>
-                        <div class="input-group">
-                            <label>Phone</label>
-                            <input type="text" class="text bar" >
-                            <div class="error-message">Phone is a required field.</div>
-                        </div>
-                        
-                    </div>
-        
-                    <div class="submit row">
-                        <button id="submit">Submit</button>
-                    </div>
-                    
-                </div>
-                
-            </form>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">Contact List</th>
-                    </tr>
-                    <tr>
-                        <th>NAME</th>
-                        <th>EMAIL</th>
-                        <th>PHONE</th>
-                        <th colspan="2">ACTION</th>
-                    </tr>
-                </thead>
-                <tbody id="contact_table_body">
-        
-                </tbody>
-            </table>
-            
+            <div class="container">
+				<div class="title">
+					<h1>Contact List</h1>
+				</div>
+				<div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+				<div class="quickaddForm">
+					<label for="fullname">Name</label><input type="text" id="fullname" class="formFields">
+					<label for="phone">Phone</label><input type="text" id="phone" class="formFields">
+					<label for="address">Address</label><textarea name="address" id="address" cols="30" rows="10" class="formFields"></textarea>
+					<label for="city">City</label><input type="text" id="city" class="formFields">
+					<label for="email">E-Mail</label><input type="text" id="email" class="formFields">
+					<br><br>
+					<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+				</div>
+				<div class="addbook">
+					<!-- <div class="entry">
+						<div class="name"><p>Patrick Patenaude</p></div>
+						<div class="email"><p>patp02@uqo.ca</p></div>
+						<div class="phone"><p>4508082321</p></div>
+						<div class="address"><p>6 Vezina</p></div>
+						<div class="city"><p>Gatineau</p></div>
+						<div class="del"><a href="#">Delete</a></div>
+					</div> -->
+					
+				</div>
+			
              
               
         </div>
