@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="scripts/addressbook.js" defer></script>
+    <link rel="stylesheet" href="styles/addressbook.css">
+    <title>myMailbox</title>
+</head>
+<body>
+    <!--Header start-->
+    <div class="header">
+        <div class="header_left">
+            <span class="material-icons">menu</span>
+            <h1>myMailbox</h1>
+            
+        </div>
+
+        <div class="header_middle">
+            
+            <input type="text" placeholder="Search Mail" />
+            <span class="material-icons"> arrow_drop_down </span>
+        </div>
+        
+        <div class="header_right">
+            <span class="material-icons"> apps </span>
+            <span class="material-icons"> notifications </span>
+            <span class="material-icons"> account_circle </span>
+        </div>
+    </div>
+    <!--Header Ends-->
+
+    <!-- Main Body Starts -->
+    <div class="tabs">
+        <!-- Sidebar Starts -->
+        <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1"> Messages </button>
+            <button class="tabs__button" data-for-tab="2"> Compose</button>
+            <button class="tabs__button" data-for-tab="3"> Contacts</button>
+
+        </div>
+        <div class="tabs__content" data-tab="1">
+            <h2> Messages</h2>
+            <p> Liste de messages</p>
+        </div>
+        <div class="tabs__content" data-tab="2">
+            <h2> Compose</h2>
+            <p> Créer un message</p>
+        </div>
+        <div class="tabs__content" data-tab="3">
+            <div class="container">
+				<div class="title">
+					<h1>Contact List</h1>
+				</div>
+				<div class="quickadd"><button id="QuickAdd">+ Add</button></div>
+				<div class="quickaddForm">
+					<label for="fullname">Name</label><input type="text" id="fullname" class="formFields">
+					<label for="phone">Phone</label><input type="text" id="phone" class="formFields">
+					<label for="address">Address</label><textarea name="address" id="address" cols="30" rows="10" class="formFields"></textarea>
+					<label for="city">City</label><input type="text" id="city" class="formFields">
+					<label for="email">E-Mail</label><input type="text" id="email" class="formFields">
+					<br><br>
+					<button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+				</div>
+				<div class="addbook">
+					<!-- <div class="entry">
+						<div class="name"><p>Patrick Patenaude</p></div>
+						<div class="email"><p>patp02@uqo.ca</p></div>
+						<div class="phone"><p>4508082321</p></div>
+						<div class="address"><p>6 Vezina</p></div>
+						<div class="city"><p>Gatineau</p></div>
+						<div class="del"><a href="#">Delete</a></div>
+					</div> -->
+					
+				</div>
+			
+             
+              
+        </div>
+    </div>
+
+    <script>
+
+       let notes = localStorage.getItem(".text bar")
+    </script>
+    <!-- Main Body Ends -->
+    
+</body>
+
+</html>
