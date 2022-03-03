@@ -35,143 +35,156 @@
             <span class="material-icons"> account_circle </span>
         </div>
     </div>
+	<!--Header End-->
 
-<div class = "topnav">
-  <a class="active">Home</a>
-  <a onclick ="boutonNouveau()">Nouveau message</a>
-  <a onclick ="boutonCarnet()">Carnet d'adresse</a>
-  <a onclick ="boutonBoite()">Boite de réception</a>
-  <a onclick = "boutonAbout()">About</a>
-</div>
-<div id ="principal" class = "principal">
-<h3 style="margin-top: 55px;">UNIVERSITÉ DU QUÉBEC EN OUTAOUAIS</h3>
-TRAVAIL DE SESSION
+<!--Main Body Start-->
 
-PRÉSENTÉ À
+	<!--Onglet Start-->
+	<div class = "topnav">
+		<a class="active">Home</a>
+		<a onclick ="boutonNouveau()">Nouveau message</a>
+		<a onclick ="boutonCarnet()">Carnet d'adresse</a>
+		<a onclick ="boutonBoite()">Boite de réception</a>
+		<a onclick = "boutonAbout()">About</a>
+	</div>
+	<!--Onglet End-->
 
-Fraczak Wojciech
+	<!--About Start-->
+	<div id ="principal" class = "principal">
+		<h3 style="margin-top: 55px;">UNIVERSITÉ DU QUÉBEC EN OUTAOUAIS</h3>
+		TRAVAIL DE SESSION
 
-COMME EXIGENCE PARTIELLE
+		PRÉSENTÉ À
 
-DU COURS
+		Fraczak Wojciech
 
-Technologie Internet 
+		COMME EXIGENCE PARTIELLE
 
+		DU COURS
 
-PAR
-
-Hein Samuel
-
-Patrick Patenaude
-
-Lawrence Kater
-
-Projet 1
+		Technologie Internet 
 
 
+		PAR
+
+		Hein Samuel
+
+		Patrick Patenaude
+
+		Lawrence Kater
+
+		Projet 1
 
 
-08-03-2022
-
-</div>
 
 
-<div class ="divMessage" id = "composer">
-	</br>
-	<h3 style="margin-bottom: 70px;"> Composer un nouveau message </h3>
-	<form id="envoie-message">
-		<textarea id="message" name="envoieMessage" placeholder="Entrez votre message" rows="5" onkeypress= "verifierCaractere()" ></textarea>
-		<input type="text" class = "auteur-input" name="auteur" id="auteur" placeholder="Entrez le nom de l'auteur">
-		<input type="submit" value="Envoyer" class="btn btn-primary btn-block" />
+		08-03-2022
+	
+	</div>
+	<!--About End-->
+
+	<!--Nouveau Message Start-->
+	<div class ="divMessage" id = "composer">
 		</br>
-	</form>
-</div>
+		<h3 style="margin-bottom: 70px;"> Composer un nouveau message </h3>
+		<form id="envoie-message">
+			<textarea id="message" name="envoieMessage" placeholder="Entrez votre message" rows="5" onkeypress= "verifierCaractere()" ></textarea>
+			<input type="text" class = "auteur-input" name="auteur" id="auteur" placeholder="Entrez le nom de l'auteur">
+			<input type="submit" value="Envoyer" class="btn btn-primary btn-block" />
+			</br>
+		</form>
+	</div>
+	<!--Nouveau Message End-->
 
-<div id ="mesMessages">
-	<h3 style="margin-top: 70px; margin-bottom: 60px;"> Mes messages</h3>
-	<form id="search-form_message">
-		<div id="resultsMessage">	  
-		</div>
+	<!--Boite de reception Start-->
+	<div id ="mesMessages">
+		<h3 style="margin-top: 70px; margin-bottom: 60px;"> Mes messages</h3>
+		<form id="search-form_message">
+			<div id="resultsMessage">	  
+			</div>
+			
+			<div>
+				<label>
+					<input type="text" name="searchMessage" id="searchMessage" placeholder="Rechercher un auteur" />
+				</label>
+			</div>
+					<input type="submit" value="Rechercher" />
+		</form>
+		</br>
 		
-		<div>
-			<label>
-				<input type="text" name="searchMessage" id="searchMessage" placeholder="Rechercher un auteur" />
-			</label>
-		</div>
-				<input type="submit" value="Rechercher" />
-	</form>
-	</br>
-	
-	<table class="table table-striped mt-5">
-		<thead>
-			<tr>
-				<th>Message</th>
-				<th>Auteur</th>
-				<th>Action</th>
-			</tr>
-		</thead>
+		<table class="table table-striped mt-5">
+			<thead>
+				<tr>
+					<th>Message</th>
+					<th>Auteur</th>
+					<th>Action</th>
+				</tr>
+			</thead>
 
-		<tbody id="message-list">
+			<tbody id="message-list">
 
-		</tbody>
-	</table>
-</div>
+			</tbody>
+		</table>
+	</div>
+	<!--Boite de Reception End-->
 
 
-<div id ="nouveauContact">
-	</br>
-	
-	</br>
-	<form id="book-form">
-	<p id ="Info"> </p> 
-		<div class="form-group">
-			
-			
-			<h3 style="margin: 30px 0px 65px;">Créer Contact</h3>
+	<!--Carnet d'adresse Start-->
+	<div id ="nouveauContact">
+		</br>
 		
-			<input type="text" id="title" placeholder="Clé" class="form-control" />
-			<input type = "button" id="btnGenerer" onclick = "genererCle()" value = "Générer une clé"> 
-		</div>
-
-		<div class="form-group">
-	
-			<input type="text" id="author" placeholder="Nom" class="form-control" />
-		</div>
-
-		<input type="submit" value="Créer" class="btn btn-primary btn-block" />
-	</form>
-
-	</br>
-	</br>
-	<h3> Liste des contact(s)</h3>
-	<form id="search-form">
-		<div id="results">	  
-		</div>
-		<div>
-			<label>
-				<input type="text" name="search" id="search" placeholder="Rechercher un contact" />
-			</label>
-		</div>
-				<input type="submit" value="Rechercher" />
-	</form>
-	<table class="table table-striped mt-5">
-		<thead>
+		</br>
+		<form id="book-form">
+		<p id ="Info"> </p> 
+			<div class="form-group">
+				
+				
+				<h3 style="margin: 30px 0px 65px;">Créer Contact</h3>
 			
-			<tr>
-				<th>Clé public</th>
-				<th>Nom</th>
-				<th>Action</th>
-			</tr>
-		</thead>
+				<input type="text" id="title" placeholder="Clé" class="form-control" />
+				<input type = "button" id="btnGenerer" onclick = "genererCle()" value = "Générer une clé"> 
+			</div>
 
-		<tbody id="book-list">
+			<div class="form-group">
+		
+				<input type="text" id="author" placeholder="Nom" class="form-control" />
+			</div>
 
-		</tbody>
-	</table>
-	</br>
-</div>
+			<input type="submit" value="Créer" class="btn btn-primary btn-block" />
+		</form>
 
-<script>
-</script>
+		</br>
+		</br>
+		<h3> Liste des contact(s)</h3>
+		<form id="search-form">
+			<div id="results">	  
+			</div>
+			<div>
+				<label>
+					<input type="text" name="search" id="search" placeholder="Rechercher un contact" />
+				</label>
+			</div>
+					<input type="submit" value="Rechercher" />
+		</form>
+		<table class="table table-striped mt-5">
+			<thead>
+				
+				<tr>
+					<th>Clé public</th>
+					<th>Nom</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+
+			<tbody id="book-list">
+
+			</tbody>
+		</table>
+		</br>
+	</div>
+	<!--Carnet d'adresse End-->
+	<script>
+	</script>
 </body>
+<!--Main Body End-->
 </html>

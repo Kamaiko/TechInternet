@@ -1,38 +1,37 @@
 /* Header start */
 .header_left h1 {
-    
-    font-size: 40px;
-    object-fit: contain;
-    height: 80px;
-    margin-left: 10px;
-    margin-top: 50px;
+  
+  font-size: 40px;
+  object-fit: contain;
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 50px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .header_left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header_left span {
-    
-    padding: 10px;
-    cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .header_middle {
-    display: flex;
-    flex: 0.7;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 10px;
-    border-radius: 5px;
+  display: flex;
+  flex: 0.7;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .material-icons {
@@ -40,13 +39,12 @@
 }
 
 .header_middle input {
-    border: none;
-    width: 100%;
-    padding:  10px;
-    outline: none;
-    font-size: medium;
-    background-color: transparent;
-
+  border: none;
+  width: 100%;
+  padding:  10px;
+  outline: none;
+  font-size: medium;
+  background-color: transparent;
 }
 
 .header_right {
@@ -64,13 +62,13 @@
 
 
 
-/*Main Body Starts */
-
+/*Tabs Start */
 .topnav {
   background-color: whitesmoke;
   overflow: hidden;
   width: 100%;
 }
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -78,8 +76,8 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
 }
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -89,13 +87,13 @@
   background-color: #71bcee;
   color: white;
 }
+/* Tabs End */
 
 
-.textSecretKey{
-	height: 100px
-	
-	
-}
+/*Main Body Start */
+
+
+/*Nouveau Message Start */
 
 .principal {
  border: 5px solid #f2f2f2;
@@ -111,6 +109,7 @@ textarea{
 	resize: none;
 }
 
+
 .auteur-input{
 	margin : 10px;
 	margin-left : -1px;	
@@ -118,72 +117,80 @@ textarea{
 	width: 100%;
 }
 
+form#envoie-message {
+  margin: 0px 260px;
+}
+/*Nouveau Message End */
 
+  /*Position de h3 dans le documenty Start*/
 h3{
 	margin : 0px;
 	margin-top : 10px;
 	margin-left : 10px;	
   text-align: center;
 }
-
-/* On ne semble pas s'en servir
-h4{
-	margin : 0px;
-	margin-top : 10px;
-	margin-left : 10px;	
-}
-*/
-#envoie-message {
-  text-align: center;
-}
-
 .divMessage {
 	width: 100%;
 	padding:  50px;
-	
 } 
-
-/*Le CSS ajouté depuis la dernière version (Patrick - 2 Mars) */
-
-input.btn.btn-primary.btn-block {
-  margin: auto;
-  width: 100%; 
-  background-color: #71bcee;
-}
-
-form#book-form {
-  margin-bottom: 65px;
-}
-
-form#envoie-message {
-  margin: 0px 260px;
-}
-
-#nouveauContact {
-  padding: 0px 310px;
- 
-}
 
 #search-form {
   margin-top: 30px;
 }
+  /* Posititon de h3 dans le document End */
 
 
-#mesMessages {
-  text-align: center;
-  width: 100%;
+ 
 
+/*Carnet d'adresse Start */
+#nouveauContact {
+  padding: 0px 310px;
+ 
 }
+/* Carnet d'adresse End */
 
-#search-form_message {
-text-align: left;
-}
 
+/* Boite de Réception Start */
 div#mesMessages {
   padding-left: 310px;
   padding-right: 310px;
   width: 100%;
 }
+/* Boite de Réception End */
  
+/*Le CSS ajouté depuis la dernière version (Patrick - 2 Mars) */
+
+input.btn.btn-primary.btn-block { /* Modifie la couleur du bouton "Envoyer" et "Créer" */
+  background-color: #71bcee;
+}
+
 
 /* Main Body Ends */
+
+
+
+
+
+
+
+ 
+/*////////////////////////////////
+EXCEPTIONS À GARDER OU EFFACER  
+///////////////////////////////*/
+
+  /* On ne semble pas s'en servir
+  h4{
+    margin : 0px;
+    margin-top : 10px;
+    margin-left : 10px;	
+  }
+  */
+
+  /* Je ne sais pas à quoi sert cette propriété qui était déjà presente dans le CSS, mais je vais la laisser ici  */
+  .textSecretKey{
+    height: 100px
+    
+    
+  }
+
+
