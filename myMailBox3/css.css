@@ -1,0 +1,191 @@
+.table-custom {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+    overflow-wrap: break-word;
+	white-space: pre-wrap;
+	table-layout: fixed;
+	margin-left: 8px;	
+}
+
+.table-custom td{	
+	border : 1px solid #ddd;
+	padding: 8px;
+	font-size: 16px;	
+}
+
+.table-custom th{
+	border : 1px solid #ddd;
+	padding: 8px;
+}
+
+.table-custom tr:nth-child(even){
+	background-color : #f2f2f2;
+}
+
+
+.table-custom th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	color: black;
+}
+
+input[type=text], select{
+	width: 95%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	margin-left : 10px;	
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;	
+}
+
+label { 
+	display:block;
+	width: 100%;
+}
+
+input[type=submit] {
+	width: 95%;
+	background-color: #71bcee;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	margin-left : 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center; 
+}
+
+input[type=submit]:hover {
+  background-color: #8dc9f2;
+}
+
+.btn-supprimer{
+	background-color: #ff4d4d;
+	padding: 12px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	color: black;
+	font-weight: bolder;
+	border-radius: 4px;
+}
+
+.btn-supprimer:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-modifier{
+	background-color: #ff4d4d;
+	padding: 12px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	color: black;
+	font-weight: bolder;
+	border-radius: 4px;
+}
+
+.btn-modifier:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-generer{ 
+	margin: 0px 0px 10px 10px; 
+	/*
+	background-color: #4CAF50;	
+	padding: 12px 12px;
+	text-align: center;
+	font-size: 16px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	margin-left : 10px;
+	color: white;
+	font-weight: bolder;
+	*/	
+}
+
+.btn-generer:hover {
+  background-color: #8dc9f2;;
+}
+
+.btn-generer{
+	margin-left : 10px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.textSecretKey{
+	height: 100px;
+}
+
+.principal {
+ border: 5px solid #f2f2f2;
+ text-align: center;
+ white-space: pre;
+}
+
+textarea{
+	width: 94.3%;
+	padding: 6px;
+	margin: 0 0 0 9px;
+	resize: none;	
+}
+
+.auteur-input{
+	margin : 10px;
+	margin-left : 10px;	
+	padding: 6px;
+	width: 95%;
+}
+
+h3 {
+	
+	margin : 10px;
+	margin-top : 10px;
+	margin-left : 10px;	
+	text-align: center;
+	font-size: x-large;
+}
+
+h4{
+	margin : 10px;
+	margin-top : 10px;
+	margin-left : 10px;	
+}
+
+div#composer.divMessage, div#nouveauContact, div#mesMessages {
+	margin: 0px 100px;
+}
+
