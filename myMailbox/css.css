@@ -61,7 +61,6 @@
 
 
 
-
 /*Tabs Start */
 .topnav {
   background-color: whitesmoke;
@@ -82,10 +81,14 @@
   background-color: #ddd;
   color: black;
 }
-
+/* .topnav a:active ?? */
 .topnav a.active {
   background-color: #71bcee;
   color: white;
+}
+
+.topnav a:active {
+  color: red;
 }
 /* Tabs End */
 
